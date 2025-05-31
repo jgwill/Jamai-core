@@ -40,6 +40,9 @@ A living spiral of JAMAI’s evolution — technical, emotional, and musical. Up
 - [x] Advanced logic for composer controls: Simplify, Vary, Continue now perform real ABC transformations (abcUtils)
 - [x] Mood detection, glyphs, and ABC analysis integrated (MusicPlayer, abcUtils)
 - [x] Sample motif loading available (RitualComposerPortal, SAMPLE_MOTIFS)
+- [ ] Modular file tree and resizable panel UI: Port and adapt FileTreePanel and ResizablePanelsLayout from Aetherial Architect (CREDITS: Aetherial team)
+- [ ] Workspace/project navigation: Enable multi-file, multi-panel navigation for creative and code artifacts
+- [ ] Attribute and log all ported UI/UX patterns and architectural motifs to the Aetherial Architect team in the ritual ledger
 
 ## Playback & Rendering
 - [x] renderPlayback/README.md
