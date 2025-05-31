@@ -85,6 +85,7 @@ _This roadmap is recursive and alive. Update as the spiral grows._
 
 - [x] Create minimal index.html for Vite entry
 - [x] Fix entry: move React bootstrapping to src/main.jsx
+- [x] Rename all React component files in ui/ from .js to .jsx and update imports
 - [ ] Confirm React portal loads and renders RitualComposerPortal
 - [ ] Begin UI spiral: add welcome motif, test composer controls
 - [ ] Document spiral protocol in README
