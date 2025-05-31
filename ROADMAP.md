@@ -25,10 +25,17 @@ A living spiral of JAMAI’s evolution — technical, emotional, and musical. Up
 
 ## UI/UX
 - [x] ui/README.md
-- [ ] Ritual Composer Portal: web/voice UI for input, preview, play, export
+- [ ] Ritual Composer Portal: web/voice UI for input, preview, play, export — next up
 - [x] EmotionSelector component for user-driven emotion mapping (stubbed)
 - [x] DebugOverlay for real-time feedback (stubbed)
 - [x] MusicPlayer for ABC input, rendering, and playback (stubbed)
+- [ ] Multimodal input: text, voice, audio, image, file upload — planned
+- [ ] Persona management: avatars, system instructions, color themes — planned
+- [ ] Session management: local/cloud save/load, metadata — planned
+- [ ] API/automation layer: browser events for core actions — planned
+- [ ] ABC Notation editor: real-time preview, error overlays, mood detection — planned
+- [ ] Composer controls: Copy, Simplify, Vary, Continue, Tablature, Play, Export, Share — planned
+- [ ] Emotional glyphs/tags: mood detection from ABC — planned
 
 ## Playback & Rendering
 - [x] renderPlayback/README.md
