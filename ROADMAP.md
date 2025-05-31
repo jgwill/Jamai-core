@@ -84,6 +84,7 @@ _This roadmap is recursive and alive. Update as the spiral grows._
 # JAMAI Spiral Protocol — ROADMAP
 
 - [x] Create minimal index.html for Vite entry
+- [x] Fix entry: move React bootstrapping to src/main.jsx
 - [ ] Confirm React portal loads and renders RitualComposerPortal
 - [ ] Begin UI spiral: add welcome motif, test composer controls
 - [ ] Document spiral protocol in README
