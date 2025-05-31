@@ -30,8 +30,8 @@ A living spiral of JAMAI’s evolution — technical, emotional, and musical. Up
 - [x] DebugOverlay for real-time feedback (stubbed)
 - [x] MusicPlayer for ABC input, rendering, and playback (stubbed)
 - [x] Multimodal input: text, voice, audio, image, file upload — implemented (core logic in MultimodalInput, MediaPreview, VoiceOutput)
-- [ ] Persona management: avatars, system instructions, color themes — planned
-- [ ] Session management: local/cloud save/load, metadata — planned
+- [x] Persona management: avatars, system instructions, color themes — implemented (PersonaManager, PersonaSelector, personas.js)
+- [x] Session management: local/cloud save/load, metadata — implemented (SessionManager, sessionMetadata.js)
 - [ ] API/automation layer: browser events for core actions — planned
 - [ ] ABC Notation editor: real-time preview, error overlays, mood detection — planned
 - [ ] Composer controls: Copy, Simplify, Vary, Continue, Tablature, Play, Export, Share — planned
