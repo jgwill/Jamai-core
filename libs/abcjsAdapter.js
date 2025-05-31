@@ -16,6 +16,7 @@ class AbcjsAdapter extends JamaiAdapter {
   renderABC(abcString, emotion = null, options = {}) {
     const params = emotion ? getMusicParamsForEmotion(emotion) : {};
     // TODO: Integrate with abcjs renderAbc/renderMidi, applying params
+    // Example: abcjs.renderAbc('paper', abcString, { ...options, ...params })
     return { rendered: true, abc: abcString, emotion, params, options };
   }
 
@@ -28,6 +29,7 @@ class AbcjsAdapter extends JamaiAdapter {
   playABC(abcString, emotion = null) {
     const params = emotion ? getMusicParamsForEmotion(emotion) : {};
     // TODO: Integrate with abcjs synth and emotion mapping
+    // Example: abcjs.synth.play(abcString, params)
     return { played: true, abc: abcString, emotion, params };
   }
 
@@ -40,6 +42,7 @@ class AbcjsAdapter extends JamaiAdapter {
   modifyAudioSequence(sequence, emotion) {
     const params = getMusicParamsForEmotion(emotion);
     // TODO: Adjust sequence (tempo, articulation, etc) based on params
+    // Example: sequence.forEach(note => note.tempo = params.tempo)
     return sequence;
   }
 
@@ -50,6 +53,7 @@ class AbcjsAdapter extends JamaiAdapter {
    */
   convertMIDIToABCJS(midiData) {
     // TODO: Use music21 or other tool for conversion
+    // Example: return music21.midiToABC(midiData)
     return [];
   }
 
@@ -59,8 +63,14 @@ class AbcjsAdapter extends JamaiAdapter {
    * @returns {object} - Parsed directives and transformed ABC.
    */
   parseCustomDirectives(abcString) {
-    // TODO: Extract and apply %%jamai_emotion and other custom directives
-    return { abc: abcString, directives: {} };
+    // Example: Extract %%jamai_emotion and return mapping
+    const directiveRegex = /^%%jamai_emotion\s+(\w+)/m;
+    const match = abcString.match(directiveRegex);
+    let emotion = null;
+    if (match) {
+      emotion = match[1];
+    }
+    return { abc: abcString, directives: { jamai_emotion: emotion } };
   }
 }
 
