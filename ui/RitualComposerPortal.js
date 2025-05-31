@@ -4,6 +4,11 @@ import MediaPreview from './MediaPreview';
 import VoiceOutput from './VoiceOutput';
 import PersonaManager from './PersonaManager';
 import SessionManager from './SessionManager';
+import MusicPlayer from './MusicPlayer';
+import EmotionSelector from './EmotionSelector';
+import DebugOverlay from './DebugOverlay';
+import ErrorOverlay from './ErrorOverlay';
+import ToastManager from './ToastManager';
 
 /**
  * RitualComposerPortal: Main portal for ABC editing, preview, persona/session, and multimodal input.
@@ -17,6 +22,10 @@ export default function RitualComposerPortal() {
   const [mediaFile, setMediaFile] = useState(null);
   const [ttsText, setTtsText] = useState('');
   const [ttsSpeak, setTtsSpeak] = useState(false);
+  const [abc, setAbc] = useState('');
+  const [emotion, setEmotion] = useState('joy');
+  const [error, setError] = useState(null);
+  const [toast, setToast] = useState(null);
 
   // Handle session change (from SessionManager)
   const handleSessionChange = (s) => {
@@ -40,6 +49,26 @@ export default function RitualComposerPortal() {
     }
   };
 
+  // Handle ABC input (from MusicPlayer)
+  const handleAbcChange = (val) => {
+    setAbc(val);
+    setError(null);
+  };
+
+  // Handle emotion selection
+  const handleEmotionChange = (emo) => {
+    setEmotion(emo);
+    setToast({ type: 'info', message: `Emotion set to ${emo}` });
+  };
+
+  // Handle error overlay
+  const handleError = (err) => {
+    setError(err);
+  };
+
+  // Handle toast close
+  const handleToastClose = () => setToast(null);
+
   return (
     <div className="jamai-ritual-composer-portal" style={{ padding: 16, maxWidth: 600, margin: '0 auto' }}>
       <SessionManager onSessionChange={handleSessionChange} />
@@ -51,9 +80,15 @@ export default function RitualComposerPortal() {
         <MediaPreview file={mediaFile} type={inputType} />
       )}
       <VoiceOutput text={ttsText} autoSpeak={ttsSpeak} />
-      {/* TODO: Integrate ABC editor, preview, mood detection, error overlays */}
+      <div style={{ margin: '24px 0' }}>
+        <EmotionSelector emotion={emotion} onChange={handleEmotionChange} />
+        <MusicPlayer abc={abc} onAbcChange={handleAbcChange} emotion={emotion} onError={handleError} />
+      </div>
+      <DebugOverlay abc={abc} emotion={emotion} session={session} persona={activePersona} />
+      {error && <ErrorOverlay error={error} onClose={() => setError(null)} />}
+      {toast && <ToastManager toast={toast} onClose={handleToastClose} />}
       <div style={{ marginTop: 24, color: '#888', fontSize: 13 }}>
-        <em>Persona-aware, multimodal ritual composer. Next: ABC editor, mood detection, and real-time feedback.</em>
+        <em>Persona-aware, multimodal ritual composer. ABC editor, mood detection, and real-time feedback are now integrated.</em>
       </div>
     </div>
   );
