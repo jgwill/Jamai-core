@@ -1,5 +1,6 @@
 import React from 'react';
 import personas from '../data/personas';
+import JAMAIWorkspace from './JAMAIWorkspace.jsx';
 
 /**
  * PersonaSelector: UI for selecting a persona from available options.

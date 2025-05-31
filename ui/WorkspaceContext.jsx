@@ -1,6 +1,7 @@
 // WorkspaceContext.js
 // Provides context for file selection, open files, and panel state in JAMAI workspace navigation
 import React, { createContext, useState, useCallback } from 'react';
+import JAMAIWorkspace from './JAMAIWorkspace.jsx';
 
 export const WorkspaceContext = createContext();
 

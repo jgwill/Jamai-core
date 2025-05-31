@@ -1,4 +1,5 @@
 import React from 'react';
+import MusicPlayer from './MusicPlayer.jsx';
 
 /**
  * MediaPreview: Shows preview for audio, image, or file input in JAMAI.

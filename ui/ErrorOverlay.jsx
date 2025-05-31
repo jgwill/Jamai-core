@@ -1,3 +1,5 @@
+import MediaPreview from './MediaPreview.jsx';
+
 // JAMAI ErrorOverlay: error and warning overlays
 // ...existing code...
 export default function ErrorOverlay() {

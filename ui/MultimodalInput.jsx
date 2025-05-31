@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react';
+import ComposerControls from './ComposerControls.jsx';
 
 /**
  * MultimodalInput: Handles text, voice (speech-to-text), audio, image, and file input for JAMAI.

@@ -1,4 +1,5 @@
 import React from 'react';
+import VoiceOutput from './VoiceOutput.jsx';
 
 /**
  * ComposerControls: UI for Copy, Simplify, Vary, Continue, Tablature, Play, Export, Share actions.

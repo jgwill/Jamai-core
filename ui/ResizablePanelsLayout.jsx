@@ -1,6 +1,7 @@
 // ResizablePanelsLayout.js
 // Ported and adapted from Aetherial Architect (CREDITS: Aetherial team)
 import React, { useRef, useState, useCallback, useEffect } from 'react';
+import JAMAIWorkspace from './JAMAIWorkspace.jsx';
 
 export default function ResizablePanelsLayout({
   leftPanelContent,
