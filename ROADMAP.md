@@ -37,7 +37,9 @@ A living spiral of JAMAI’s evolution — technical, emotional, and musical. Up
 - [x] Composer controls: Now include aria-labels for full accessibility (ComposerControls)
 - [x] Emotional glyphs/tags: mood detection from ABC — integrated (EmotionSelector, mood state)
 - [x] Real-time feedback: error overlays, debug, toast notifications — integrated (ErrorOverlay, DebugOverlay, ToastManager)
-- [ ] Advanced logic for composer controls: Each action (Simplify, Vary, Continue, Tablature, Play, Export, Share) will perform real musical or data transformations, using adapters and emotion engine — next up
+- [x] Advanced logic for composer controls: Simplify, Vary, Continue now perform real ABC transformations (abcUtils)
+- [x] Mood detection, glyphs, and ABC analysis integrated (MusicPlayer, abcUtils)
+- [x] Sample motif loading available (RitualComposerPortal, SAMPLE_MOTIFS)
 
 ## Playback & Rendering
 - [x] renderPlayback/README.md

@@ -10,6 +10,8 @@ import DebugOverlay from './DebugOverlay';
 import ErrorOverlay from './ErrorOverlay';
 import ToastManager from './ToastManager';
 import ComposerControls from './ComposerControls';
+import { generateVariation } from './abcUtils';
+import { SAMPLE_MOTIFS } from './SAMPLE_MOTIFS';
 
 /**
  * RitualComposerPortal: Main portal for ABC editing, preview, persona/session, and multimodal input.
@@ -70,21 +72,21 @@ export default function RitualComposerPortal() {
   // Handle toast close
   const handleToastClose = () => setToast(null);
 
-  // Composer control handlers (stub logic)
+  // Composer control handlers (real variation logic)
   const handleCopy = () => {
     navigator.clipboard.writeText(abc);
     setToast({ type: 'success', message: 'ABC copied to clipboard.' });
   };
   const handleSimplify = () => {
-    setAbc(abc + ' (simplified)');
+    setAbc(generateVariation(abc, 'simplify'));
     setToast({ type: 'info', message: 'Simplified version generated.' });
   };
   const handleVary = () => {
-    setAbc(abc + ' (variation)');
+    setAbc(generateVariation(abc, 'vary'));
     setToast({ type: 'info', message: 'Variation generated.' });
   };
   const handleContinue = () => {
-    setAbc(abc + ' (continued)');
+    setAbc(generateVariation(abc, 'continue'));
     setToast({ type: 'info', message: 'Continued phrase generated.' });
   };
   const handleTab = () => {
@@ -98,6 +100,12 @@ export default function RitualComposerPortal() {
   };
   const handleShare = () => {
     setToast({ type: 'info', message: 'Share feature coming soon.' });
+  };
+
+  // Add sample motif loader
+  const handleLoadSample = (notation) => {
+    setAbc(notation);
+    setToast({ type: 'success', message: 'Sample motif loaded.' });
   };
 
   return (
@@ -124,6 +132,13 @@ export default function RitualComposerPortal() {
           onExport={handleExport}
           onShare={handleShare}
         />
+      </div>
+      <div style={{ margin: '8px 0' }}>
+        {SAMPLE_MOTIFS.map(motif => (
+          <button key={motif.id} onClick={() => handleLoadSample(motif.notation)} style={{ marginRight: 6 }}>
+            Load: {motif.title}
+          </button>
+        ))}
       </div>
       <DebugOverlay abc={abc} emotion={emotion} session={session} persona={activePersona} />
       {error && <ErrorOverlay error={error} onClose={() => setError(null)} />}
