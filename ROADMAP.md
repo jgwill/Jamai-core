@@ -20,8 +20,8 @@ A living spiral of JAMAI’s evolution — technical, emotional, and musical. Up
 
 ## Format Conversion
 - [x] formatConversion/README.md
-- [ ] Adapters for ABC ⇄ MIDI ⇄ MusicXML ⇄ Tab (music21, MuseScore, etc)
-- [ ] Seamless import/export between formats
+- [ ] Adapters for ABC ⇄ MIDI ⇄ MusicXML ⇄ Tab (music21, MuseScore, etc) — next up
+- [ ] Seamless import/export between formats — planned
 
 ## UI/UX
 - [x] ui/README.md
