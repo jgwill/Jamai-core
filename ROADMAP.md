@@ -39,9 +39,9 @@ A living spiral of JAMAI’s evolution — technical, emotional, and musical. Up
 
 ## Interactive & Conversational
 - [x] interactive/README.md
-- [ ] Conversational correction and refinement loop
-- [ ] Voice-aware input and feedback
-- [ ] Session memory for iterative music creation
+- [ ] Conversational correction and refinement loop — next up
+- [ ] Voice-aware input and feedback — planned
+- [ ] Session memory for iterative music creation — planned
 
 ## Output & Data
 - [x] output/README.md
