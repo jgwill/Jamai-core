@@ -1,0 +1,7 @@
+{
+  "joy": {"valence": 0.9, "arousal": 0.8, "color": "#FFD700", "abc": "Cmaj", "tempo": 120},
+  "longing": {"valence": 0.2, "arousal": 0.4, "color": "#6495ED", "abc": "Am", "tempo": 70},
+  "prayer": {"valence": 0.7, "arousal": 0.3, "color": "#B0E0E6", "abc": "Fmaj", "tempo": 60},
+  "anger": {"valence": 0.1, "arousal": 0.9, "color": "#FF4500", "abc": "Dmin", "tempo": 140},
+  "serenity": {"valence": 0.8, "arousal": 0.2, "color": "#98FB98", "abc": "Gmaj", "tempo": 50}
+}
