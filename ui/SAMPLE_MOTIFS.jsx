@@ -1,3 +1,5 @@
+import { generateVariation } from './abcUtils.jsx';
+
 // Sample motifs for quick loading (from EchoComposer)
 export const SAMPLE_MOTIFS = [
   {
