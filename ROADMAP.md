@@ -33,9 +33,9 @@ A living spiral of JAMAI’s evolution — technical, emotional, and musical. Up
 ## Playback & Rendering
 - [x] renderPlayback/README.md
 - [x] abcjsAdapter.js with emotion-driven methods
-- [ ] Real-time rendering with abcjs (score, playback, emotion mapping)
-- [ ] Integration with MuseScore/MIDI for advanced playback
-- [ ] Implement modifyAudioSequence, convertMIDIToABCJS, and parseCustomDirectives in abcjsAdapter
+- [ ] Real-time rendering with abcjs (score, playback, emotion mapping) — next up
+- [ ] Integration with MuseScore/MIDI for advanced playback — planned
+- [ ] Implement modifyAudioSequence, convertMIDIToABCJS, and parseCustomDirectives in abcjsAdapter — planned
 
 ## Interactive & Conversational
 - [x] interactive/README.md
