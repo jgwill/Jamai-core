@@ -1,3 +1,5 @@
+import React from "react";
+
 // abcUtils.js
 // Utilities for ABC analysis, mood detection, glyphs, and variation (migrated from EchoComposer)
 

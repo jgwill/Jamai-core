@@ -1,6 +1,7 @@
 // MusicPlayer.js
 // UI component stub for ABC input, rendering, and playback in JAMAI
 
+import React from "react";
 import { analyzeAbcNotation, determineMood, getEmotionalGlyph, generateVariation } from './abcUtils.jsx';
 
 // TODO: Text area for ABC input

@@ -1,3 +1,4 @@
+import React from "react";
 import { generateVariation } from './abcUtils.jsx';
 
 // Sample motifs for quick loading (from EchoComposer)

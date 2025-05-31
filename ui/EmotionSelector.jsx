@@ -1,3 +1,5 @@
+import React from "react";
+
 // EmotionSelector.js
 // UI component stub for selecting and applying emotions in JAMAI
 

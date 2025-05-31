@@ -1,3 +1,4 @@
+import React from "react";
 import ErrorOverlay from './ErrorOverlay.jsx';
 
 // JAMAI ToastManager: feedback notifications

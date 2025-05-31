@@ -1,3 +1,4 @@
+import React from "react";
 import EmotionSelector from './EmotionSelector.jsx';
 
 // DebugOverlay.js

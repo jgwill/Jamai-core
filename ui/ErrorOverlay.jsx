@@ -1,3 +1,4 @@
+import React from "react";
 import MediaPreview from './MediaPreview.jsx';
 
 // JAMAI ErrorOverlay: error and warning overlays
