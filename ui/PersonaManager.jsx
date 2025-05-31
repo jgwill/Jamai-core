@@ -1,6 +1,6 @@
 import React from 'react';
 import personas from '../data/personas';
-import PersonaSelector from './PersonaSelector';
+import PersonaSelector from './PersonaSelector.jsx';
 
 /**
  * PersonaManager: Handles persona logic and state for JAMAI.

@@ -1,3 +1,5 @@
+import EmotionSelector from './EmotionSelector.jsx';
+
 // DebugOverlay.js
 // UI component stub for displaying debug information in JAMAI
 

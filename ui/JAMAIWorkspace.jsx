@@ -1,7 +1,7 @@
 import React from 'react';
-import ResizablePanelsLayout from './ResizablePanelsLayout';
-import FileTreePanel from './FileTreePanel';
-import OpenFilesTabs from './OpenFilesTabs';
+import ResizablePanelsLayout from './ResizablePanelsLayout.jsx';
+import FileTreePanel from './FileTreePanel.jsx';
+import OpenFilesTabs from './OpenFilesTabs.jsx';
 import { WorkspaceProvider } from './WorkspaceContext';
 
 // JAMAIWorkspace: Main workspace navigation and layout shell

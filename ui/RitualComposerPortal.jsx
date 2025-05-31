@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
-import MultimodalInput from './MultimodalInput';
-import MediaPreview from './MediaPreview';
-import VoiceOutput from './VoiceOutput';
-import PersonaManager from './PersonaManager';
-import SessionManager from './SessionManager';
-import MusicPlayer from './MusicPlayer';
-import EmotionSelector from './EmotionSelector';
-import DebugOverlay from './DebugOverlay';
-import ErrorOverlay from './ErrorOverlay';
-import ToastManager from './ToastManager';
-import ComposerControls from './ComposerControls';
-import { generateVariation } from './abcUtils';
-import { SAMPLE_MOTIFS } from './SAMPLE_MOTIFS';
+import MultimodalInput from './MultimodalInput.jsx';
+import MediaPreview from './MediaPreview.jsx';
+import VoiceOutput from './VoiceOutput.jsx';
+import PersonaManager from './PersonaManager.jsx';
+import SessionManager from './SessionManager.jsx';
+import MusicPlayer from './MusicPlayer.jsx';
+import EmotionSelector from './EmotionSelector.jsx';
+import DebugOverlay from './DebugOverlay.jsx';
+import ErrorOverlay from './ErrorOverlay.jsx';
+import ToastManager from './ToastManager.jsx';
+import ComposerControls from './ComposerControls.jsx';
+import { generateVariation } from './abcUtils.jsx';
+import { SAMPLE_MOTIFS } from './SAMPLE_MOTIFS.jsx';
 
 // JAMAI Ritual Composer Portal — 5-zone layout
 export default function RitualComposerPortal() {

@@ -1,7 +1,7 @@
 // OpenFilesTabs.js
 // Tabs for open files in the workspace (multi-panel navigation)
 import React, { useContext } from 'react';
-import { WorkspaceContext } from './WorkspaceContext';
+import { WorkspaceContext } from './WorkspaceContext.jsx';
 
 export default function OpenFilesTabs() {
   const { openFiles, activeFile, openFile, closeFile } = useContext(WorkspaceContext);

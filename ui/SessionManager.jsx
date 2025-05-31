@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { sessionMetadata as defaultSessionMetadata } from '../data/sessionMetadata';
-import PersonaManager from './PersonaManager';
+import PersonaManager from './PersonaManager.jsx';
 
 /**
  * SessionManager: Handles local/cloud session save/load and persona state for JAMAI.
