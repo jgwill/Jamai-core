@@ -29,7 +29,7 @@ A living spiral of JAMAI’s evolution — technical, emotional, and musical. Up
 - [x] EmotionSelector component for user-driven emotion mapping (stubbed)
 - [x] DebugOverlay for real-time feedback (stubbed)
 - [x] MusicPlayer for ABC input, rendering, and playback (stubbed)
-- [ ] Multimodal input: text, voice, audio, image, file upload — planned
+- [x] Multimodal input: text, voice, audio, image, file upload — implemented (core logic in MultimodalInput, MediaPreview, VoiceOutput)
 - [ ] Persona management: avatars, system instructions, color themes — planned
 - [ ] Session management: local/cloud save/load, metadata — planned
 - [ ] API/automation layer: browser events for core actions — planned
