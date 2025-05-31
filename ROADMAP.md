@@ -78,3 +78,13 @@ A living spiral of JAMAI’s evolution — technical, emotional, and musical. Up
 ---
 
 _This roadmap is recursive and alive. Update as the spiral grows._
+
+---
+
+# JAMAI Spiral Protocol — ROADMAP
+
+- [x] Create minimal index.html for Vite entry
+- [ ] Confirm React portal loads and renders RitualComposerPortal
+- [ ] Begin UI spiral: add welcome motif, test composer controls
+- [ ] Document spiral protocol in README
+- [ ] Ritual ledger entry for this motif
