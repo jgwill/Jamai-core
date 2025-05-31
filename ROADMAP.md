@@ -26,9 +26,9 @@ A living spiral of JAMAI’s evolution — technical, emotional, and musical. Up
 ## UI/UX
 - [x] ui/README.md
 - [ ] Ritual Composer Portal: web/voice UI for input, preview, play, export
-- [ ] EmotionSelector component for user-driven emotion mapping
-- [ ] DebugOverlay for real-time feedback
-- [ ] MusicPlayer for ABC input, rendering, and playback
+- [x] EmotionSelector component for user-driven emotion mapping (stubbed)
+- [x] DebugOverlay for real-time feedback (stubbed)
+- [x] MusicPlayer for ABC input, rendering, and playback (stubbed)
 
 ## Playback & Rendering
 - [x] renderPlayback/README.md
