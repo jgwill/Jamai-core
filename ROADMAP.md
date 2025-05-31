@@ -34,7 +34,7 @@ A living spiral of JAMAI’s evolution — technical, emotional, and musical. Up
 - [x] Session management: local/cloud save/load, metadata — implemented (SessionManager, sessionMetadata.js)
 - [ ] API/automation layer: browser events for core actions — planned
 - [x] ABC Notation editor: real-time preview, error overlays, mood detection — integrated (MusicPlayer, EmotionSelector, overlays)
-- [x] Composer controls: Copy, Simplify, Vary, Continue, Tablature, Play, Export, Share — to be scaffolded next
+- [x] Composer controls: Copy, Simplify, Vary, Continue, Tablature, Play, Export, Share — scaffolded (ComposerControls, RitualComposerPortal)
 - [x] Emotional glyphs/tags: mood detection from ABC — integrated (EmotionSelector, mood state)
 - [x] Real-time feedback: error overlays, debug, toast notifications — integrated (ErrorOverlay, DebugOverlay, ToastManager)
 

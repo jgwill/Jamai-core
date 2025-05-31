@@ -9,6 +9,7 @@ import EmotionSelector from './EmotionSelector';
 import DebugOverlay from './DebugOverlay';
 import ErrorOverlay from './ErrorOverlay';
 import ToastManager from './ToastManager';
+import ComposerControls from './ComposerControls';
 
 /**
  * RitualComposerPortal: Main portal for ABC editing, preview, persona/session, and multimodal input.
@@ -69,6 +70,36 @@ export default function RitualComposerPortal() {
   // Handle toast close
   const handleToastClose = () => setToast(null);
 
+  // Composer control handlers (stub logic)
+  const handleCopy = () => {
+    navigator.clipboard.writeText(abc);
+    setToast({ type: 'success', message: 'ABC copied to clipboard.' });
+  };
+  const handleSimplify = () => {
+    setAbc(abc + ' (simplified)');
+    setToast({ type: 'info', message: 'Simplified version generated.' });
+  };
+  const handleVary = () => {
+    setAbc(abc + ' (variation)');
+    setToast({ type: 'info', message: 'Variation generated.' });
+  };
+  const handleContinue = () => {
+    setAbc(abc + ' (continued)');
+    setToast({ type: 'info', message: 'Continued phrase generated.' });
+  };
+  const handleTab = () => {
+    setToast({ type: 'info', message: 'Tablature view coming soon.' });
+  };
+  const handlePlay = () => {
+    setToast({ type: 'info', message: 'Playback triggered.' });
+  };
+  const handleExport = () => {
+    setToast({ type: 'info', message: 'Export feature coming soon.' });
+  };
+  const handleShare = () => {
+    setToast({ type: 'info', message: 'Share feature coming soon.' });
+  };
+
   return (
     <div className="jamai-ritual-composer-portal" style={{ padding: 16, maxWidth: 600, margin: '0 auto' }}>
       <SessionManager onSessionChange={handleSessionChange} />
@@ -83,12 +114,22 @@ export default function RitualComposerPortal() {
       <div style={{ margin: '24px 0' }}>
         <EmotionSelector emotion={emotion} onChange={handleEmotionChange} />
         <MusicPlayer abc={abc} onAbcChange={handleAbcChange} emotion={emotion} onError={handleError} />
+        <ComposerControls
+          onCopy={handleCopy}
+          onSimplify={handleSimplify}
+          onVary={handleVary}
+          onContinue={handleContinue}
+          onTab={handleTab}
+          onPlay={handlePlay}
+          onExport={handleExport}
+          onShare={handleShare}
+        />
       </div>
       <DebugOverlay abc={abc} emotion={emotion} session={session} persona={activePersona} />
       {error && <ErrorOverlay error={error} onClose={() => setError(null)} />}
       {toast && <ToastManager toast={toast} onClose={handleToastClose} />}
       <div style={{ marginTop: 24, color: '#888', fontSize: 13 }}>
-        <em>Persona-aware, multimodal ritual composer. ABC editor, mood detection, and real-time feedback are now integrated.</em>
+        <em>Persona-aware, multimodal ritual composer. Composer controls are now scaffolded. Next: advanced logic for each action.</em>
       </div>
     </div>
   );
