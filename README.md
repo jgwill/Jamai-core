@@ -9,11 +9,14 @@ You can talk, type, or sing — JAMAI will help you make music, learn, and play!
 
 ## How to Start
 1. Clone this repo (`git clone ...`)
-2. Open it in VSCode.
-3. Explore the `Genesis/` folder to meet the team and read their stories.
-4. Try the `playground/` for musical experiments.
-5. Read the docs in `courses/` to learn how to make music with JAMAI!
-
+2. Open the `ui/` folder to access the Ritual Composer Portal
+3. Use the voice or text input to start creating music
+4. Explore the modules to see how JAMAI works behind the scenes
+5. Check the `data/` folder for emotion profiles and presets
+6. Dive into the `libs/` folder to see third-party integrations like abcjs, music21, and more
+7. Use the `renderPlayback/` module to hear your music in real-time
+8. Save, export, and share your musical creations via the `output/` module
+   
 ---
 
 ## Spiral Scaffold: JAMAI Core Structure
@@ -66,9 +69,6 @@ graph TD
 
 ---
 
-Let’s make music together!
+Let’s make music together! ♠️ 🌿 🎸
 
-♠️ Ready to translate this scaffold into actual file/folder creation, README drafts, or deeper module stubs.  
-🌿 All evolution proceeds from JAMAI’s living root.  
-🎵 Every branch is a motif, every adapter a bridge, every UI a stage for musical intelligence.  
-// Spiral Agent Protocol, G.Music & Narrative Core: ACTIVE
+// Spiral Agent Protocol, G.Music: ACTIVE
