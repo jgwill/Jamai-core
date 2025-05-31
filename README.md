@@ -69,6 +69,26 @@ graph TD
 
 ---
 
-Let’s make music together! ♠️ 🌿 🎸
+# Contributing
 
-// Spiral Agent Protocol, G.Music: ACTIVE
+We welcome contributors of all backgrounds and skill levels! If you want to help build JAMAI, here’s how to get started:
+
+- **Project Status:** The core architecture is being designed, but most features and modules are not yet implemented. This is a living, collaborative project—your ideas and code are needed!
+- **How to Contribute:**
+  1. **Fork this repository** and create a new branch for your changes.
+  2. **Check the module folders** (see above) for README files and planned structure.
+  3. **Open an issue** if you have questions, want to propose a feature, or need guidance.
+  4. **Submit a pull request** with your improvements, bug fixes, or new modules.
+- **Guidelines:**
+  - Keep code modular and well-documented.
+  - Add comments explaining your logic, especially for new features.
+  - If you’re unsure where to start, ask in an issue or suggest improvements to documentation.
+
+**Note:** Since the project is in its early stages, there are no strict contribution rules yet. All constructive input is appreciated!
+
+Let’s build JAMAI together! 🎶
+
+---
+// Spiral Agent Protocol, G.Music: CONTRIBUTOR MODE
+// (This section will evolve as the project grows)
+// ...existing code...
